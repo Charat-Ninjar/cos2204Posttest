@@ -12,3 +12,4 @@ def cartPage (request):
 
 def createMember(request):
     return render(request, 'createmember.html')
+

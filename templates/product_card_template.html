@@ -1,0 +1,14 @@
+<div class="row">
+    {% for card in card_collection %}
+    <div class="col-md-4 mb-3">
+        <div class="card">
+            <img src="{{ card.image_url }}" class="card-img-top" alt="{{ card.image_alt }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ card.title }}</h5>
+                <p class="card-text">{{ card.description }}</p>
+                <a href="{{ card.link }}" class="btn btn-primary">{{ card.button_text }}</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
